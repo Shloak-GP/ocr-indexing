@@ -1,0 +1,51 @@
+# Company documents and anything derived from them: never commit
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.parquet
+*.jsonl
+*.npy
+*.faiss
+*.bin
+*.zip
+*.xlsx
+*.docx
+*.msg
+data/
+runs/
+run_*/
+index/
+cache/
+work/
+claude_bk/
+compare.html
+
+# Ground truth and real question sets (contain real names, amounts, vehicle numbers)
+gt_fields*.csv
+ocr_ground_truth*.csv
+page_scores.csv
+eval_queries.csv
+bc_vouchers.csv
+# only the synthetic example is tracked
+!eval/eval_queries.example.csv
+
+# Backups and Python clutter
+*.bak*
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Secrets
+.env
+*.env
+kaggle.json
+*secret*
+*token*
+*.pem
+*.key
